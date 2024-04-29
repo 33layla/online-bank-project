@@ -1,0 +1,27 @@
+from tkinter import * 
+
+
+
+
+
+root = Tk()
+root.geometry("100x100")
+root.columnconfigure((0,1,2,3), weight = 50)
+root.rowconfigure(0, weight = 1)
+root.rowconfigure((1,2,3), weight = 300)
+
+title_structure = Frame(background = "Blue", padx = 4, pady = 4, borderwidth = 2)
+title_structure.grid(row = 0, column = 0, columnspan = 5)
+
+root.title("C2C Online Bank System")
+Title_sign = Label(root, text = "C2C Online Bank System", font = ("Times New Roman", 15), background = "Blue")
+Title_sign.place(x = 400, y =10)
+
+Welcome_sign = Label(root, text = "Welcome to C2C Online Bank System!")
+Welcome_sign.grid(row = 1, column = 0,)
+
+firstname = Entry(root, width = 30)
+firstname.insert(3, "Enter you First Name: ")
+firstname.place(x = 0, y = 100)
+
+
