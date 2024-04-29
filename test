@@ -1,0 +1,10 @@
+import unittest
+
+class Test(unittest.Testcase):
+
+    def test_connection(self):
+    test = main.connection.cursor()
+    self.assertingTrue(test)
+
+if __name__== '__main__':
+    unittest.main()
